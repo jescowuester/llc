@@ -5,7 +5,7 @@
   border: none;
   border-radius: var(--llc-radius);
   cursor: pointer;
-
+  color: #fff;
   padding: 8px 12px;
   font-size: inherit;
   text-align: center;

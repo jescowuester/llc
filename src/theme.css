@@ -1,6 +1,32 @@
 body {
   --llc-radius: 3px;
-  --llc-background: rgb(221, 222, 253);
-  --llc-color: rgb(30, 28, 43);
-  --llc-outline: 0px 0px 0px 3px rgba(47, 76, 241, 0.418);
+  --llc-background: rgb(80, 86, 255);
+  --llc-grey-light: rgb(118, 117, 124);
+  --llc-grey-dark: rgb(34, 31, 54);
+  --llc-outline: 0px 0px 0px 2px rgba(47, 76, 241, 0.418);
+}
+
+a[href],
+area[href],
+input:not([disabled]),
+select:not([disabled]),
+textarea:not([disabled]),
+button:not([disabled]),
+iframe,
+[tabindex],
+[contentEditable='true'] {
+  transition: box-shadow 0.2s;
+  outline: none;
+}
+
+a[href]:focus,
+area[href]:focus,
+input:not([disabled]):focus,
+select:not([disabled]):focus,
+textarea:not([disabled]):focus,
+button:not([disabled]):focus,
+iframe:focus,
+[tabindex]:focus,
+[contentEditable='true']:focus {
+  box-shadow: var(--llc-outline);
 }
