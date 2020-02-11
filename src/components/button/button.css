@@ -1,5 +1,9 @@
-[data-cml___button] {
-  background: #fff;
+[data-llc_button] {
+  background: linear-gradient(
+    95deg,
+    rgba(255, 27, 78, 1) 45%,
+    rgba(216, 239, 255, 1) 46%
+  );
   border: 1px solid #333;
   cursor: pointer;
 }
