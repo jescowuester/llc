@@ -1,9 +1,45 @@
 [data-llc_button] {
-  background: linear-gradient(
-    95deg,
-    rgba(255, 27, 78, 1) 45%,
-    rgba(216, 239, 255, 1) 46%
-  );
-  border: 1px solid #333;
+  position: relative;
+
+  background: var(--llc-background);
+  border: none;
+  border-radius: var(--llc-radius);
   cursor: pointer;
+
+  padding: 8px 12px;
+  font-size: inherit;
+  text-align: center;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  user-select: none;
+  vertical-align: bottom;
+
+  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s, color 0.2s;
+  outline: none;
+}
+
+[data-llc_button]:active {
+  box-shadow: none;
+}
+
+[data-llc_button]:focus {
+  box-shadow: var(--llc-outline);
+}
+
+[data-llc_button]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+[data-is-loading]:disabled {
+  cursor: wait;
+}
+[data-is-loading]:disabled [data-loader] {
+  position: absolute;
+}
+[data-is-loading]:disabled [data-content] {
+  opacity: 0;
 }

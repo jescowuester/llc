@@ -1,0 +1,6 @@
+body {
+  --llc-radius: 3px;
+  --llc-background: rgb(221, 222, 253);
+  --llc-color: rgb(30, 28, 43);
+  --llc-outline: 0px 0px 0px 3px rgba(47, 76, 241, 0.418);
+}
